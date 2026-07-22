@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar"
 function App() {
 
 return (
-    <div className="min-h-screen font-display">
+    <div className="min-h-screen">
    <Navbar/>
      </div>
   )
