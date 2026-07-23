@@ -33,7 +33,7 @@ const Navbar = () => {
                 ))}
               </div>
               <div className="flex items-center gap-4">
-                 <button classname="text-sm px-4 inline-block py-2 rounded-md text-neutral-600 dark:text-neutral-400 font-medium">Login</button>
+                 <button className="text-sm px-4 inline-block py-2 rounded-md text-neutral-600 dark:text-neutral-400 font-medium">Login</button>
                  <Button>Signup</Button>
               </div>
             </div>
