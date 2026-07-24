@@ -7,7 +7,7 @@ import LandingImages from './LandingImages'
 
 const Hero = () => {
   return (
-    <div className="pt-10 md:pt-20 lg:pt-32">
+    <section className="pt-10 md:pt-20 lg:pt-32">
     <Container>
         <Heading as="h1">Agents that do the work <br/> Approvals that keep you safe.</Heading>
         <SubHeading className="py-8">Deploy AI agents that plan, act through your tools, and report outcomes—without changing how your teams work.</SubHeading>
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <LandingImages/>
        </Container>
-    </div>
+    </section>
   )
 }
 
