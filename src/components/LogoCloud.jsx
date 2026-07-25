@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'motion/react'
 
 const LogoCloud = () => {
     const logos = [
@@ -36,10 +37,27 @@ const LogoCloud = () => {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl mx-auto">
         {logos.map((logo, index)=>(
-          <img key={logo.title} src={logo.src} alt={logo.title}
+          <motion.div
+          initial={{
+            y:-10,
+            opacity:0,
+            filter:"blur(10px)",
+          }}
+          animate={{
+            y: 0,
+            opacity:1,
+            filter:"blur(0px)",
+          }}
+          transition={{
+            duration:0.5,
+            ease: "easeOut",
+            delay: index * 0.1,
+          }}>
+             <img key={logo.title} src={logo.src} alt={logo.title}
           width={100} height={100}
           className="size-20 object-contain mx-auto"></img>
-        ))}
+          </motion.div>
+         ))}
         </div>
     </section>
   )
