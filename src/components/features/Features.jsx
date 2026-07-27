@@ -8,6 +8,7 @@ import { CardContent } from './Card'
 import { IconPlus } from '@tabler/icons-react'
 import { CardCta } from './Card'
 import { CardSkeleton } from './Card'
+import {FirstSkeleton} from './skeletons/FirstSkeleton'
 
 const Features = () => {
   return (
@@ -19,7 +20,9 @@ const Features = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10 md:my-20">
             <Card className="rounded-tl-3xl rounded-bl-3xl">
-                <CardSkeleton></CardSkeleton>
+                <CardSkeleton>
+                    <FirstSkeleton/>
+                </CardSkeleton>
                 <CardContent>
                 <CardTitle>Prebuilt Agents, Turned to Your Workflows</CardTitle>
                 <CardCta>
