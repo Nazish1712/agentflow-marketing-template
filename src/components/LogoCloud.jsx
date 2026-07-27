@@ -30,12 +30,12 @@ const LogoCloud = () => {
 
     ]
   return (
-    <section>
+    <section className="pb-9 md:pb-10">
         <h2 className="text-neutral-600 font-medium dark:text-neutral-400
         text-lg text-center max-w-xl mx-auto">Trusted by modern operators across industries.<br/> {""}
         <span className="text-neutral-500">From pilot to scale without chaos.</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl mx-auto mt-10">
         {logos.map((logo, index)=>(
           <motion.div
           initial={{
@@ -43,7 +43,7 @@ const LogoCloud = () => {
             opacity:0,
             filter:"blur(10px)",
           }}
-          animate={{
+          whileInView={{
             y: 0,
             opacity:1,
             filter:"blur(0px)",

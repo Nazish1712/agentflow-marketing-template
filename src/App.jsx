@@ -4,6 +4,7 @@ import ModeToggle from "./components/ModeToggle"
 import {Navbar} from "./components/Navbar"
 import Hero from "./components/Hero"
 import LogoCloud from './components/LogoCloud'
+import Features from './components/features/Features'
 
 function App() {
 
@@ -12,6 +13,7 @@ return (
    <Navbar/>
    <Hero/>
    <LogoCloud/>
+   <Features/>
      </div>
   )
 }
