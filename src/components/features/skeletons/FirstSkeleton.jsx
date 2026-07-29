@@ -5,7 +5,7 @@ import { IconCircleDashedCheck, IconClock , IconRipple} from '@tabler/icons-reac
 export const FirstSkeleton = () => {
   return (
     <div>
-        <SkeletonCard/>
+        <SkeletonCard title="Campaign Planner" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="1205" variant="danger"/>} icon={ <IconCircleDashedCheck className="size-4"/>}/>
     </div>
   )
 }
@@ -14,12 +14,13 @@ const SkeletonCard = ({icon, title , description , badge}) => {
     return(
        <div className="max-w-[90%] mx-auto w-full p-3 rounded-lg border border-neutral-200 dark:border-neutral-700 bg-neutral-300">
         <div className="flex gap-3 items-center">
-            <IconCircleDashedCheck className="size-4"/>
-            <p className="text-sm font-bold text-black dark:text-white">Campaign Planner
+            {icon}
+            <p className="text-sm font-bold text-black dark:text-white"> {title} 
             </p>
-            <Badge text="1205" variant="danger"/>
+            {badge}
         </div>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400 font-medium mt-3">Creates clear, ready-to-use campaign briefs using product info, audience data, and past results.</p>
+        <p className="text-sm text-neutral-500 dark:text-neutral-400 font-medium mt-3">
+            {description}</p>
         <div className="flex items-center gap-2 flex-wrap mt-2">
             <Tag text="Google Ads"/>
             <Tag text="SaaS"/>
