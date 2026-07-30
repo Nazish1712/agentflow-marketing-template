@@ -33,6 +33,6 @@ export const CardTitle = ({className, children}) => {
 
 export const CardSkeleton = ({className, children}) => {
     return(
-       <div className={`min-h-49 md:min-h-80 ${className}`}>{children}</div>
+       <div className={` relative min-h-40 md:min-h-80 overflow-hidden perspective-distant  ${className}`}>{children}</div>
     )
 }
