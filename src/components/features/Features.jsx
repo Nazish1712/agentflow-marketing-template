@@ -9,6 +9,9 @@ import { IconPlus } from '@tabler/icons-react'
 import { CardCta } from './Card'
 import { CardSkeleton } from './Card'
 import {FirstSkeleton} from './skeletons/FirstSkeleton'
+import ThirdSkeleton from './skeletons/ThirdSkeleton'
+import SecondSkeleton from './skeletons/SecondSkeleton'
+
 
 const Features = () => {
   return (
@@ -31,7 +34,9 @@ const Features = () => {
                 </CardContent>
             </Card>
             <Card>
-            <CardSkeleton></CardSkeleton>
+            <CardSkeleton>
+                <SecondSkeleton/>
+            </CardSkeleton>
                 <CardContent>
                 <CardTitle>Automate Handsoff, Reduce Ops Friction</CardTitle>
                 <CardCta>
@@ -40,7 +45,9 @@ const Features = () => {
                 </CardContent>
             </Card>
             <Card className="rounded-tr-3xl rounded-br-3xl">
-            <CardSkeleton></CardSkeleton>
+            <CardSkeleton>
+                <ThirdSkeleton/>
+            </CardSkeleton>
                 <CardContent>
                 <CardTitle>Approvals, Guardrails, and full Auditability</CardTitle>
                 <CardCta>

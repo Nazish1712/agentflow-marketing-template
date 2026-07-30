@@ -4,15 +4,14 @@ import { IconCircleDashedCheck, IconClock , IconRipple, IconExclamationCircle, I
 
 export const FirstSkeleton = () => {
   return (
-    <div style={{
-        transform: "rotateZ(15deg) rotateY(-20deg) rotateX(30deg) scale(1.2)"
-    }} 
-     className=" absolute perspective-distant h-full w-full -translate-x-6 mask-radial-from-50% mask-r0from-50%">
+    <div 
+     className="absolute perspective-distant rotate-z-15 -rotate-y-20 rotate-x-30 scale-[1.2] h-full w-full -translate-x-6 mask-radial-from-50% mask-r-from-50%">
+
         <SkeletonCard className="absolute bottom-0 left-12 z-30 max-w-[90%]" title="Campaign Planner" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="120s" variant="danger"/>} icon={ <IconCircleDashedCheck className="size-4"/>}/>
         
-        <SkeletonCard className="absolute bottom-10 left-8 z-20" title="Issue Tracker" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="105s" variant="success"/>} icon={ <IconExclamationCircle className="size-4"/>}/>
+        <SkeletonCard className="absolute bottom-8 left-8 z-20" title="Issue Tracker" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="105s" variant="success"/>} icon={ <IconExclamationCircle className="size-4"/>}/>
         
-        <SkeletonCard className="absolute bottom-20 left-4 max-w-[80%]" title="Risk Analysis" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="40s" variant="warning"/>} icon={ <IconPrison className="size-4"/>}/>
+        <SkeletonCard className="absolute bottom-20 left-4 max-w-[80%] z-10" title="Risk Analysis" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="40s" variant="warning"/>} icon={ <IconPrison className="size-4"/>}/>
     
     </div>
   )
