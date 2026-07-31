@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Card = ({className, children}) => {
   return (
-    <div className={`bg-neutral-50 dark:bg-neutral-800 rounded-lg ${className}`}>
+    <div className={`max-w-xl mx-auto bg-neutral-50 dark:bg-neutral-800 rounded-lg ${className}`}>
         {children}
     </div>
   )
@@ -33,10 +33,9 @@ export const CardTitle = ({className, children}) => {
 
 export const CardSkeleton = ({className, children}) => {
     return(
-       <div className={` relative h-40 md:h-80 overflow-hidden perspective-distant  ${className}`}>
-        <div className="absolute inset-0 h-full w-full z-40 bg-white/5">
-        {children}
+       <div className={` relative h-80 sm:h-60 md:h-80 overflow-hidden perspective-distant  ${className}`}>
+       {children}
           </div>
-          </div>
+        
     )
 }

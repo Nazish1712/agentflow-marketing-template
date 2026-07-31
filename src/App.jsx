@@ -5,6 +5,7 @@ import {Navbar} from "./components/Navbar"
 import Hero from "./components/Hero"
 import LogoCloud from './components/LogoCloud'
 import Features from './components/features/Features'
+import Speed from './components/Speed'
 
 function App() {
 
@@ -14,6 +15,7 @@ return (
    <Hero/>
    <LogoCloud/>
    <Features/>
+   <Speed/>
      </div>
   )
 }
