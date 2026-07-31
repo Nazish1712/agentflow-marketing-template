@@ -34,7 +34,7 @@ export const CardTitle = ({className, children}) => {
 export const CardSkeleton = ({className, children}) => {
     return(
        <div className={` relative h-40 md:h-80 overflow-hidden perspective-distant  ${className}`}>
-        <div className="absolute inset-0 h-full w-full z-40 bg-white">
+        <div className="absolute inset-0 h-full w-full z-40 bg-white/5">
         {children}
           </div>
           </div>

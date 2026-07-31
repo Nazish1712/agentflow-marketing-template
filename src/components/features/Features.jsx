@@ -10,7 +10,7 @@ import { CardCta } from './Card'
 import { CardSkeleton } from './Card'
 import {FirstSkeleton} from './skeletons/FirstSkeleton'
 import ThirdSkeleton from './skeletons/ThirdSkeleton'
-import SecondSkeleton from './skeletons/SecondSkeleton'
+import {SecondSkeleton} from './skeletons/SecondSkeleton'
 
 
 const Features = () => {
