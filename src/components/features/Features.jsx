@@ -30,7 +30,7 @@ const Features = () => {
                     <FirstSkeleton/>
                 </CardSkeleton>
                 <CardContent>
-                <CardTitle>Prebuilt Agents, Turned to Your Workflows</CardTitle>
+                <CardTitle>Prebuilt Agents, Tuned to Your Workflows</CardTitle>
                 <CardCta>
                     <IconPlus/>
                     </CardCta>
