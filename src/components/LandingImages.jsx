@@ -5,14 +5,17 @@ import { easeOut, motion } from "motion/react"
 const LandingImages = () => {
   return (
     <div className="relative">
-    <div className="relative min-h-72 sm:min-h-80 md:min-h-100  lg:min-h-140 w-full pt-20 perspective-distant">
-    <div className="absolute inset-0 h-full w-full mask-b-from-50% bg-white z-50">
-     <motion.div 
+
+   <div className="absolute inset-x-0 h-full w-full mask-t-from-10% bg-white z-50"></div>
+
+    <div className="relative min-h-72 sm:min-h-80 md:min-h-100  lg:min-h-140 w-full pt-20 perspective-distant translate-x-28">
+    
+    <motion.div 
      initial={{
         opacity:0,
         y: -100,
         }} 
-        animate={{
+        whileInView={{
         opacity: 1,
         y : 0,
         }}
@@ -20,17 +23,18 @@ const LandingImages = () => {
             duration: 0.5,
             ease: 'easeOut',
         }}
-         className="perspective-[4000px]">
+         className="perspective-[4000px] shadow-2xl">
+
         <img src="/images/hero1.webp" alt="Hero-image"
         height={1080} width={1920}
-        className="absolute inset-0 rounded-lg mask-r-from-20% mask-b-from-20% shadow-2xl object-contain"
+        className="absolute inset-0 rounded-lg mask-r-from-20% mask-b-from-20% shadow-xl select-none pointer-events-none"
         style={{transform: "rotateY(20deg) rotateX(40deg) rotateZ(-20deg)"}}></img>
      </motion.div>
      <motion.div initial={{
         opacity:0,
         y: -100,
         }} 
-        animate={{
+        whileInView={{
         opacity: 1,
         y: 0,
         }}
@@ -46,7 +50,6 @@ const LandingImages = () => {
     style={{transform: "rotateY(20deg) rotateX(40deg) rotateZ(-20deg)"}}></img>
      </motion.div>
      </div>
-  </div>
   </div>
   )
 }

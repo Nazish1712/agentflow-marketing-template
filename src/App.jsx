@@ -6,7 +6,8 @@ import Hero from "./components/Hero"
 import LogoCloud from './components/LogoCloud'
 import Features from './components/features/Features'
 import Speed from './components/Speed'
-import {FeaturesSeconday} from './featuresSecondary/FeaturesSeconday'
+import {FeaturesSecondary} from './featuresSecondary/FeaturesSeconday'
+import { FeaturesTertiary } from './featuresTertiary/FeaturesTertiary'
 
 function App() {
 
@@ -17,7 +18,8 @@ return (
    <LogoCloud/>
    <Features/>
    <Speed/>
-   <FeaturesSeconday/>
+   <FeaturesSecondary/>
+   <FeaturesTertiary/>
      </div>
   )
 }
