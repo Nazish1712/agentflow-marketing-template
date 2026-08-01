@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../components/Container'
 import { motion } from 'motion/react'
 import { SkeletonOne } from './skeletons/FirstSkeleton'
+import { SkeletonTwo } from './skeletons/SecondSkeleton'
 
 export const FeaturesSeconday = () => {
   return (
@@ -23,7 +24,9 @@ export const FeaturesSeconday = () => {
                 <h2 className="text-lg font-bold text-neutral-800">Multi-Agent Orchestration</h2>
                 <CardDescription>Coordinate multiple agents across workflows using memory, interrupts, and conditional logic.</CardDescription>
                 </CardContent>
-                <CardSkeleton>Abcd</CardSkeleton>
+                <CardSkeleton>
+                    <SkeletonTwo/>
+                </CardSkeleton>
             </div>
            </div>
         </Container>
