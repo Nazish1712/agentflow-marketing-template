@@ -25,7 +25,7 @@ export const FeaturesTertiary = () => {
                 <h2 className="text-lg font-bold text-neutral-800">Role-Based Access</h2>
                 <CardDescription>Controls who can launch, review, or manage agents based on roles.</CardDescription>
                 </CardContent>
-                <CardSkeleton className="mask-radial-from-50% mask-t-from-50%">
+                <CardSkeleton className="">
                     <SkeletonTwo/>
                 </CardSkeleton>
             </div>
