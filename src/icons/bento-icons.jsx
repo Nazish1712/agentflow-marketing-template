@@ -26,6 +26,12 @@ export const FifthIcon = (props) => {
 
 export const SixthIcon = (props) => {
     return(
-        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.89883 2.86621C2.64465 3.59275 1.79883 4.94605 1.79883 6.49975C1.79883 8.81935 3.67923 10.6998 5.99883 10.6998C7.55253 10.6998 8.90583 9.85393 9.63237 8.59975" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.99902 6.49932H10.199C10.199 4.17972 8.31862 2.29932 5.99902 2.29932V6.49932Z" fill="white" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><path d="M3.89883 2.86621C2.64465 3.59275 1.79883 4.94605 1.79883 6.49975C1.79883 8.81935 3.67923 10.6998 5.99883 10.6998C7.55253 10.6998 8.90583 9.85393 9.63237 8.59975" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.99902 6.49932H10.199C10.199 4.17972 8.31862 2.29932 5.99902 2.29932V6.49932Z" fill="white" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    )
+}
+
+export const ClockIcon = (props) => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-clock size-3" {...props}><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M12 7v5l3 3"></path></svg>
     )
 }
