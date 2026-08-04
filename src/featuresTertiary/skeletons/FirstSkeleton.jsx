@@ -64,7 +64,7 @@ const activityData = [
 
 export const SkeletonOne = () => {
   return (
-    <div className="flex-1 gap-2 flex flex-col rounded-t-3xl bg-neutral-100 border border-neutral-200 mx-auto w-full h-full absolute inset-x-10 pt-2 px-4 inset-y-2">
+    <div className="flex-1 gap-2 flex flex-col rounded-t-3xl bg-neutral-100 border border-neutral-200 mx-auto w-full h-full absolute inset-x-10 pt-2 px-2 inset-y-2">
       <Card>
         {activityData.map((item, index) => (
           <CardItem 

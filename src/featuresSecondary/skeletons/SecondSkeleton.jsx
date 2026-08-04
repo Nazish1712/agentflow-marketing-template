@@ -13,14 +13,14 @@ export const SkeletonTwo = () => {
         <Circle className="flex items-center justify-center  border-neutral-200 shadow-sm size-40 z-[10] bg-white">
             <LogoIcon className="size-10 text-neutral-400"/>
             <div className="size-10 flex items-center justify-center bg-white border border-transparent shadow-black/10 ring-1 ring-black/10 rounded-sm animate-orbit [--translate-position:120px] [--orbit-duration:10s] absolute inset-0 m-auto">
-        <SlackIcon classNmae="size-8"/>
+        <SlackIcon className="size-8"/>
         </div>
         
             <div className="size-10 flex items-center justify-center bg-white border border-transparent shadow-black/10 ring-1 ring-black/10 rounded-sm animate-orbit [--translate-position:160px] absolute inset-0 m-auto [--orbit-duration:20s]">
-        <MsExcelIcon classNmae="size-8"/>
+        <MsExcelIcon className="size-8"/>
         </div>
             <div className="size-10 flex items-center justify-center bg-white border border-transparent shadow-black/10 ring-1 ring-black/10 rounded-sm animate-orbit [--translate-position:200px] absolute inset-0 m-auto [--orbit-duration:30s]">
-            <InstaIcon classNmae="size-8"/>
+            <InstaIcon className="size-8"/>
             </div>
 
             <div className="h-6 w-40 flex items-center justify-between bg-white border border-transparent shadow-black/10 ring-1 ring-black/10 rounded-sm animate-orbit [--translate-position:220px] [--orbit-duration:40s] absolute inset-0 m-auto px-1 gap-1">
