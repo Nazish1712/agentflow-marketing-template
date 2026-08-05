@@ -8,6 +8,8 @@ import Features from './components/features/Features'
 import Speed from './components/Speed'
 import {FeaturesSecondary} from './featuresSecondary/FeaturesSeconday'
 import { FeaturesTertiary } from './featuresTertiary/FeaturesTertiary'
+import {Pricing} from './components/Pricing'
+import { Faqs } from './components/Faqs'
 
 function App() {
 
@@ -20,6 +22,8 @@ return (
    <Speed/>
    <FeaturesSecondary/>
    <FeaturesTertiary/>
+   <Pricing/>
+   <Faqs/>
      </div>
   )
 }
