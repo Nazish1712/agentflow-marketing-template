@@ -65,9 +65,10 @@ const items =[{
 
     return(
     <div>
-    <div className="flex gap-4 items-center justify-center flex-wrap mb-4">
+    <div className="flex gap-4 items-center justify-center flex-wrap mb-4 max-w-lg mx-auto">
     {items.map((item, index)=>(
-    <button key={index} className={cn("px-2 py-1 rounded-sm gap-1 flex items-center justify-center cursor-pointer active:scale-100 transition duration-200",
+    <button key={index} className={cn("px-2 py-1 rounded-sm gap-1 text-xs flex items-center justify-center cursor-pointer active:scale-98 transition duration-200 opacity-50",
+        selected.title === item.title && "opacity-100",
         item.className
     )} onClick={()=> setSelected(item)}>
         {item.icon}
@@ -92,26 +93,67 @@ const items =[{
 const Card = ({topIcon, title, description, tags, className}) => {
     
     return(
-    <div className="p-4 gap-4 shadow-black/10 border border-transparent bg-white ring-1 ring-black/10 rounded-[16px] flex items-start flex-col">
+    <motion.div 
+    key={title}
+    className="p-4 gap-4 shadow-black/10 border border-transparent bg-white ring-1 ring-black/10 rounded-[16px] flex items-start flex-col">
     <div className="flex items-center gap-2">
-    <div className={cn("size-6 shrink-0  rounded-full mt-1 flex items-center justify-center", className)}
+    <motion.div
+    initial={{
+    opacity:0,
+    }} 
+    animate={{
+    opacity:1,
+    }}
+    className={cn("size-6 shrink-0  rounded-full mt-1 flex items-center justify-center", className)}
    >
     {topIcon}
-   </div>
-    <p className="text-lg font-bold text-neutral-800">{title}</p>
+   </motion.div>
+    <motion.p 
+    initial={{
+        opacity:0,
+        filter:"blur(10px)",
+    }} 
+    animate={{
+        opacity:1,
+        filter:"blur(0px)",
+    }}
+    transition={{
+        delay:0.1,
+    }}
+    className="text-lg font-bold text-neutral-800">{title}</motion.p>
     </div>
-  
-   <div>
-    
-    <p className="text-base text-neutral-600">Tone Guidelines</p>
+     <motion.div
+     initial={{
+     opacity:0,
+     }}
+     animate={{
+        opacity:1,
+     }}
+     transition={{
+        delay:0.2,
+     }}>
+     <p className="text-base text-neutral-600">Tone Guidelines</p>
     <p className="text-sm mt-2 mb-4 text-neutral-600 rounded-sm border border-neutral-200 px-2 py-1 border-dashed">{description}</p>
     <div className="mt-2 flex flex-row flex-wrap gap-2">
-    {tags.map((tag)=>(
+    {tags.map((tag, index)=>(
+        <motion.div
+        initial={{
+            opacity:0,
+            y:-10,
+            }}
+            animate={{
+               opacity:1,
+               y:0,
+            }}
+            transition={{
+                delay:0.3 + index * 0.1,
+             }}>
         <Tag key={tag.text} text={tag.text} icon={tag.icon}/>
+        </motion.div>
     ))}
     </div>
-   </div>
-   </div>)
+   </motion.div>
+   </motion.div>)
 }
 
 const Tag = ({text, icon}) => {
