@@ -8,7 +8,7 @@ const LandingImages = () => {
 
    <div className="absolute inset-x-0 h-full w-full mask-t-from-10% bg-white z-50"></div>
 
-    <div className="relative min-h-72 sm:min-h-80 md:min-h-100  lg:min-h-140 w-full pt-20 perspective-distant translate-x-28">
+    <div className="relative min-h-72 sm:min-h-80 md:min-h-100  lg:min-h-140 w-full pt-20 perspective-distant translate-x-5 md:translate-x-28">
     
     <motion.div 
      initial={{

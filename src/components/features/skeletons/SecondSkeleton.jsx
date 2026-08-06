@@ -68,7 +68,7 @@ variant === "warning" ? "bg-yellow-500":
 }`}>
 {icon}
 </div>
-<p className="text-neutral-500 font-medium text-sm">{text}</p>
+<p className="text-neutral-500 font-medium text-xs md:text-sm">{text}</p>
 </div>
 <div className="flex items-center gap-1 text-neutral-400">
 <IconRipple className="size-3"/>

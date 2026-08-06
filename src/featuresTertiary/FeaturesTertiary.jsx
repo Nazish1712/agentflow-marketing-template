@@ -13,7 +13,7 @@ export const FeaturesTertiary = () => {
         <Container>
            <div className="grid grid-cols-1 md:grid-cols-2 border-y border-neutral-200 dark:border-neutral-800
          divide-neutral-200 dark:divide-neutral-800">
-            <div className="border-r border-b border-neutral-200 dark:border-neutral-800">
+            <div className="md:border-r border-b border-neutral-200 dark:border-neutral-800">
                 <CardContent>
                 <h2 className="text-lg font-bold text-neutral-800">Audit Trail</h2>
                 <CardDescription>Tracks every agent action with full input-output visibility and timestamps.</CardDescription>
@@ -31,7 +31,7 @@ export const FeaturesTertiary = () => {
                     <SkeletonTwo/>
                 </CardSkeleton>
             </div>
-            <div className="border-r border-neutral-200 dark:border-neutral-800">
+            <div className="md:border-r border-neutral-200 dark:border-neutral-800">
                 <CardContent>
                 <h2 className="text-lg font-bold text-neutral-800">Approval Queue</h2>
                 <CardDescription>Sends agent-generated content to human reviewers before it's published.</CardDescription>
