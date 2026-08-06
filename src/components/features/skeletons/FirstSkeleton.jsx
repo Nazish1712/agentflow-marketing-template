@@ -26,9 +26,9 @@ const SkeletonCard = ({icon, title , description , badge , className=""}) => {
             </p>
             {badge}
         </div>
-        <p className="text-sm text-neutral-400/80 dark:text-neutral-400 font-medium mt-3">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400 font-light mt-3">
             {description}</p>
-        <div className="flex items-center gap-2 flex-wrap mt-2">
+        <div className="flex items-center gap-2 flex-wrap mt-4">
             <Tag text="Google Ads"/>
             <Tag text="SaaS"/>
             <Tag text="Content"/>

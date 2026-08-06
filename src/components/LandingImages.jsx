@@ -19,6 +19,9 @@ const LandingImages = () => {
         opacity: 1,
         y : 0,
         }}
+        viewport={{
+         once: true,
+        }}
         transition={{
             duration: 0.5,
             ease: 'easeOut',
@@ -38,12 +41,15 @@ const LandingImages = () => {
         opacity: 1,
         y: 0,
         }}
+        viewport={{
+         once:true,
+        }}
         transition={{
             duration: 0.5,
             delay: 0.1,
             ease: 'easeOut',
         }}
-        className="perspective-[4000px] translate-x-20 -translate-y-40 md:-translate-x-20">
+        className="perspective-[4000px] translate-x-20 -translate-y-10 md:-translate-x-20 lg:-translate-y-40">
      <img src="/images/hero2.webp" alt="Hero-image2"
     height={1080} width={1920}
     className="absolute inset-0 rounded-lg mask-r-from-50% mask-b-from-50% shadow-2xl"

@@ -10,6 +10,7 @@ import {FeaturesSecondary} from './featuresSecondary/FeaturesSeconday'
 import { FeaturesTertiary } from './featuresTertiary/FeaturesTertiary'
 import {Pricing} from './components/Pricing'
 import { Faqs } from './components/Faqs'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ return (
    <FeaturesTertiary/>
    <Pricing/>
    <Faqs/>
+   <Footer/>
      </div>
   )
 }
