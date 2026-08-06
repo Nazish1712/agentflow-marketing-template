@@ -7,6 +7,29 @@ import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'motion/react'
 
 export const Faqs = () => {
+
+const questions =[{
+  question : "What is Agenforce AI?",
+  answer : "Agenforce AI is a platform for building and managing AI agents.",
+},
+{
+    question : "Who is Agenforce AI built for?",
+    answer : "Agenforce AI is a platform for building and managing AI agents.",
+},
+{
+    question : "How does Agenforce AI work?",
+    answer : "Agenforce AI is a platform for building and managing AI agents.",
+},
+{
+    question : "Is there a free trial available?",
+    answer : "Yes, we offer a 14-day free trial so you can explore all features before committing to a plan.",
+},
+{
+    question : "What kind of support do you provide?",
+    answer : "We provide 24/7 customer support through chat, email, and comprehensive documentation to help you get the most out of Agenforce AI.",
+}
+]
+
   return (
     <section className="py-10 md:py-20 lg:py-32 relative overflow-hidden">
         <Container>
@@ -14,7 +37,12 @@ export const Faqs = () => {
         <Heading className="my-10 md:my-20">
         Frequently Asked Questions
         </Heading>
-        <Question/>
+        <div className="flex flex-col gap-4">
+        {questions.map((question, index)=> (
+            <Question key={index} question={question.question} 
+            answer={question.answer}/>
+        ))}
+        </div>
         </Container>
     </section>
   )
@@ -26,7 +54,7 @@ const Question = ({question, answer}) => {
     return(
         <button onClick={()=>(setOpen(!open))} className="w-full rounded-3xl overflow-hidden bg-neutral-100 p-4 md:p-8">
             <div className="flex items-center justify-between ">
-                <h3 className="text-lg md:text-2xl font-bold font-display">What is ahentforce ai</h3>
+                <h3 className="text-lg md:text-2xl font-bold font-display">{question}</h3>
                 <div className="size-6 rounded-full relative  bg-black flex items-center justify-center">
                     <IconMinus className={cn("size-6 text-white absolute inset-0 transition-all duration-200",
                     open && "scale-0 rotate-90"
@@ -36,21 +64,35 @@ const Question = ({question, answer}) => {
                     )}/>
                 </div>
             </div>
-            {open && (
-            <AnimatePresence>
-            {open && (
-                <motion.p
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                    className='text-left mt-4 text-neutral-600 overflow-hidden'
-                >
-                    Agenforce AI is a platform for building and managing AI agents.
-                </motion.p>
-            )}
-        </AnimatePresence>)
-            }
+           
+               <motion.div
+                    initial={false}
+                    animate={{
+                        height: open ? "auto" : 0,
+                        opacity: open ? 1 : 0, }}
+                    style={{ height: open ? "auto" : 0, }}
+                    exit={{
+                        height:0,
+                        opacity:0,}}
+                    transition={{
+                        duration:0.2
+                    }}
+                    className=' overflow-hidden'
+                > <motion.p 
+                key={String(open)}
+                initial={{
+                    opacity:0,
+                }}
+                animate={{
+                    opacity:1,
+                }}
+                transition={{
+                    delay: 0.1
+                }}
+                className="text-left mt-4 text-neutral-600">
+                    {answer}
+                    </motion.p>
+                </motion.div>
             
         </button>  
     )
