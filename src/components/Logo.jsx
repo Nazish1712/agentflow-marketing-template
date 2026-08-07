@@ -5,7 +5,7 @@ export const  Logo = () => {
     <div>
         <a href="#" className="flex items-center gap-1">
         <LogoIcon></LogoIcon>
-        <span className="text-sm text-neutral-600">AgentForce</span>
+        <span className="text-sm text-neutral-600 dark:text-neutral-100">AgentForce</span>
         </a>
     </div>
   )

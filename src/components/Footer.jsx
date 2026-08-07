@@ -38,8 +38,8 @@ const Footer = () => {
     
 
   return (
-    <footer className='border-t border-neutral-200 dark:border-neutral-800 py-10 md:py-20 lg:py-32 relative perspective-distant overflow-hidden'>
-        <Container className='grid grid-cols-1 md:grid-cols-5 gap-10 relative z-20'>
+    <footer className='border-t border-neutral-200 dark:border-neutral-800 py-10 md:py-20 lg:py-32 relative perspective-distant overflow-hidden px-1'>
+        <Container className='grid grid-cols-1 grid-cols-2 lg:grid-cols-5 gap-10 relative z-20'>
            <div className="col-span-2 flex flex-col gap-4 items-start">
             <Logo/>
             <SubHeading>
@@ -70,8 +70,8 @@ const Footer = () => {
            <div className='flex flex-col gap-4'>
            <h4 className='text-base font-medium text-neutral-400'>Newsletter</h4>
            <div className='border border-neutral-100 bg-neutral-100 rounded-md flex items-center justify-center'>
-            <input className='bg-transparent outline-none px-4 py-2 placeholder-neutral-400 text-neutral-600 text-sm p-px' type="email" placeholder="Your email"></input>
-            <button className="px-4 py-2 rounded-sm bg-black">
+            <input className='bg-transparent outline-none px-4 py-2 placeholder-neutral-400 text-neutral-600 text-sm ' type="email" placeholder="Email"></input>
+            <button className=" px-4 py-2 rounded-sm bg-black">
                 <IconSend className='text-white size-4'/>
             </button>
            </div>

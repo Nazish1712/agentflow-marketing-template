@@ -9,9 +9,9 @@ export const FirstSkeleton = () => {
 
         <SkeletonCard className="absolute bottom-0 left-12 z-30 max-w-[90%]" title="Campaign Planner" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="120s" variant="danger"/>} icon={ <IconCircleDashedCheck className="size-4"/>}/>
         
-        <SkeletonCard className="absolute bottom-8 left-8 z-20" title="Issue Tracker" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="105s" variant="success"/>} icon={ <IconExclamationCircle className="size-4"/>}/>
+        <SkeletonCard className="absolute bottom-7 md:bottom-9 lg:bottom-7  left-8 z-20" title="Issue Tracker" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="105s" variant="success"/>} icon={ <IconExclamationCircle className="size-4"/>}/>
         
-        <SkeletonCard className="absolute bottom-20 left-4 max-w-[80%] z-10" title="Risk Analysis" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="40s" variant="warning"/>} icon={ <IconPrison className="size-4"/>}/>
+        <SkeletonCard className="absolute bottom-19 left-4 max-w-[80%] z-10" title="Risk Analysis" description="Creates clear, ready-to-use campaign briefs using product info, audience data, and past results" badge={<Badge text="40s" variant="warning"/>} icon={ <IconPrison className="size-4"/>}/>
     
     </div>
   )
@@ -19,7 +19,7 @@ export const FirstSkeleton = () => {
 
 const SkeletonCard = ({icon, title , description , badge , className=""}) => {
     return(
-       <div className={`max-w-[85%] h-fit my-auto mx-auto w-full p-3 rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-neutral-100 shadow-2xl ${className}`}>
+       <div className={`max-w-[85%] h-fit my-auto mx-auto w-full p-3 rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white shadow-2xl ${className}`}>
         <div className="flex gap-3 items-center">
             {icon}
             <p className="text-sm font-normal text-black dark:text-white"> {title} 
