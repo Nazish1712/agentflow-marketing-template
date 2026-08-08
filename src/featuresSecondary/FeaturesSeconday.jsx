@@ -13,7 +13,7 @@ export const FeaturesSecondary = () => {
            md:divide-x divide-neutral-200 dark:divide-neutral-800 divide-y md:divide-y-00">
             <div>
                 <CardContent>
-                <h2 className="text-lg font-bold text-neutral-800">Agent Studio</h2>
+                <h2 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Agent Studio</h2>
                 <CardDescription>Design, launch and customize AI agents for marketing, sales, support and ops, built around your workflows.</CardDescription>
                 </CardContent>
                 <CardSkeleton>
@@ -22,7 +22,7 @@ export const FeaturesSecondary = () => {
             </div>
             <div>
                 <CardContent>
-                <h2 className="text-lg font-bold text-neutral-800">Multi-Agent Orchestration</h2>
+                <h2 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Multi-Agent Orchestration</h2>
                 <CardDescription>Coordinate multiple agents across workflows using memory, interrupts, and conditional logic.</CardDescription>
                 </CardContent>
                 <CardSkeleton className="mask-radial-from-50% mask-t-from-50%">
@@ -35,7 +35,7 @@ export const FeaturesSecondary = () => {
             <div>
             <div className="flex items-center gap-2">
                 <WorkflowIcon/>
-                <h3 className="font-bold text-lg text-neutral-600">
+                <h3 className="font-bold text-lg text-neutral-600 dark:text-neutral-400">
                     Workflow Automation
                 </h3>
             </div>
@@ -46,7 +46,7 @@ export const FeaturesSecondary = () => {
             <div>
             <div className="flex items-center gap-2">
                 <IntegrationIcon/>
-                <h3 className="font-bold text-lg text-neutral-600">
+                <h3 className="font-bold text-lg text-neutral-600 dark:text-neutral-400">
                 Integration Fabric
                 </h3>
             </div>
@@ -57,7 +57,7 @@ export const FeaturesSecondary = () => {
             <div>
             <div className="flex items-center gap-2">
                 <HumanInLoopIcon/>
-                <h3 className="font-bold text-lg text-neutral-600">
+                <h3 className="font-bold text-lg text-neutral-600 dark:text-neutral-400">
                 Human-in-the-Loop
                 </h3>
             </div>

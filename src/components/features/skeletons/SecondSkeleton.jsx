@@ -8,7 +8,7 @@ style={{
 transform:
 "rotateY(20deg) rotateX(20deg) rotateZ(-20deg)"
 }}
-className=" group max-w-[85%] h-full my-auto mx-auto w-full p-3 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-neutral-100 shadow-2xl
+className=" group max-w-[85%] h-full my-auto mx-auto w-full p-3 rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-900 shadow-2xl
 mask-radial-from-50% mask-b-from-50% translate-x-10
 [--pattern-fg:var(--color-neutral-950)]/5 dark:[--pattern-fg:var(--color-white)]/10 flex flex-col">
 <div className="flex gap-3 items-center">
@@ -16,9 +16,9 @@ mask-radial-from-50% mask-b-from-50% translate-x-10
 <p className="text-sm font-normal text-black dark:text-white"> Campaign Planner
 </p>
 </div>
-<div className="relative flex-1 mt-4 border border-neutral-200 rounded-2xl bg-neutral-200">
+<div className="relative flex-1 mt-4 border border-neutral-200 dark:border-neutral-600 rounded-2xl bg-neutral-200">
 <Pattern/>
-<div className="absolute translate-x-12 -translate-y-4 group-hover:translate-x-0 group-hover:-translate-y-0 inset-0 bg-white h-full w-full  rounded-2xl scale-110 group-hover:scale-100
+<div className="absolute translate-x-12 -translate-y-4 group-hover:translate-x-0 group-hover:-translate-y-0 inset-0 bg-white dark:bg-neutral-900 h-full w-full  rounded-2xl scale-110 group-hover:scale-100
 transition-all duration-300">
 <Row
 icon={<IconCheck className="size-3 stroke-white fill-green-500"/>}
@@ -53,7 +53,7 @@ time="50s"/>
 
 const GradientHr = () => {
     return(
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-neutral-200 to-transparent"></div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-neutral-200  dark:via-neutral-800 to-transparent "></div>
     )
 }
 
@@ -79,8 +79,11 @@ variant === "warning" ? "bg-yellow-500":
 }
 
 const Pattern = () => {
-return(
-<div className="absolute inset-0
-bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed"></div>
-)
-}
+    return(
+    // <div className="absolute inset-0
+    // bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed"></div>
+    <div className="absolute inset-0 dark:rounded-xl dark:bg-neutral-800 dark:[--pattern-fg:theme(colors.neutral.600)] bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed"></div>
+    )
+    }
+    
+   

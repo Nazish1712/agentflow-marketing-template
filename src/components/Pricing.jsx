@@ -25,15 +25,15 @@ export const Pricing = () => {
           <ul className="list-none *:flex *:items-center *:gap-2 *font-medium flex flex-col gap-2 mt-4">
             <li>
                 <LockIcon/>
-                <p>Built-in Guardrails</p>
+                <p className="dark:text-neutral-100">Built-in Guardrails</p>
             </li>
             <li>
                 <UserIcon/>
-                <p>Agent Orchestration</p>
+                <p className="dark:text-neutral-100">Agent Orchestration</p>
             </li>
             <li>
                 <LoopIcon/>
-                <p>Human-in-the-Loop</p>
+                <p className="dark:text-neutral-100">Human-in-the-Loop</p>
             </li>
           </ul>
           </div>
@@ -73,7 +73,7 @@ const PricingCard = ({
  steps,
 }) => {
     return(
-        <div className="p-4 md:p-8 rounded-2xl bg-neutral-100 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="p-4 md:p-8 rounded-2xl bg-neutral-100 dark:bg-neutral-800 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div>
         <Heading>
             ${price}<span className="text-neutral-400 text-sm md:text-xl lg:text-3xl">/mo</span>

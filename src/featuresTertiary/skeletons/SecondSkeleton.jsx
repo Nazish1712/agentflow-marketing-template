@@ -20,7 +20,7 @@ export const SkeletonTwo = () => {
            <Item/>
            <Item src="/images/photo-3.webp"/>
            <Item containerClassName="from-black/50 via-transparent to-black/50">
-            <div className="h-full w-full bg-white rounded-[12px] flex items-center justify-center relative z-20">
+            <div className="h-full w-full bg-white dark:bg-neutral-900 rounded-[12px] flex items-center justify-center relative z-20">
             <LogoIcon className="size-12"/>
             </div>
            </Item>
@@ -39,7 +39,7 @@ export const SkeletonTwo = () => {
 
 const Item = ({children, className, src , containerClassName}) => {
     return(
-       <div className="w-full justify-self-center aspect-square  border border-dashed border-neutral-200 [--pattern-fg:var(--color-neutral-950)]/5 dark:[--pattern-fg:var(--color-neutral)]/10 relative p-[1px] rounded-xl">
+       <div className="w-full justify-self-center aspect-square  border border-dashed border-neutral-200 dark:border-neutral-700/80 [--pattern-fg:var(--color-neutral-950)]/5 dark:[--pattern-fg:var(--color-neutral)]/10 relative p-[1px] rounded-xl">
 
       <motion.div 
       initial={{

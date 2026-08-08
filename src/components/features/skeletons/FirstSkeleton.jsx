@@ -19,7 +19,7 @@ export const FirstSkeleton = () => {
 
 const SkeletonCard = ({icon, title , description , badge , className=""}) => {
     return(
-       <div className={`max-w-[85%] h-fit my-auto mx-auto w-full p-3 rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white shadow-2xl ${className}`}>
+       <div className={`max-w-[85%] h-fit my-auto mx-auto w-full p-3 rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 shadow-2xl ${className}`}>
         <div className="flex gap-3 items-center">
             {icon}
             <p className="text-sm font-normal text-black dark:text-white"> {title} 

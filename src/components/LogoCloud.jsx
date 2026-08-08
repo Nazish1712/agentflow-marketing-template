@@ -55,7 +55,7 @@ const LogoCloud = () => {
           }}>
              <img key={logo.title} src={logo.src} alt={logo.title}
           width={100} height={100}
-          className="size-20 object-contain mx-auto"></img>
+          className="size-20 object-contain mx-auto dark:filter dark:invert"></img>
           </motion.div>
          ))}
         </div>

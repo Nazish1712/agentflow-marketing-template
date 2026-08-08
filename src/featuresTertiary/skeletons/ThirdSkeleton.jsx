@@ -13,7 +13,7 @@ export const SkeletonThree = () => {
     "absolute -inset-x-[150%] -inset-y-40",
     "[background-size:40px_40px]",
     "[background-image:linear-gradient(to_right,var(--color-neutral-200)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-neutral-200)_1px,transparent_1px)]",
-    "dark:[background-image:linear-gradient(to_right,var(--color-neutral-800)_1px,transparent_1px),linear-gradient(to_bottom,var(color-neutral-800)_1px,transparent_1px)]",
+    "dark:[background-image:linear-gradient(to_right,var(--color-neutral-800)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-neutral-800)_1px,transparent_1px)]",
   )}
   style={{
     transform: "rotateY(20deg) rotateX(50deg) rotateZ(40deg)"

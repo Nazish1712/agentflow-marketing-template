@@ -15,7 +15,7 @@ export const FeaturesTertiary = () => {
          divide-neutral-200 dark:divide-neutral-800">
             <div className="md:border-r border-b border-neutral-200 dark:border-neutral-800">
                 <CardContent>
-                <h2 className="text-lg font-bold text-neutral-800">Audit Trail</h2>
+                <h2 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Audit Trail</h2>
                 <CardDescription>Tracks every agent action with full input-output visibility and timestamps.</CardDescription>
                 </CardContent>
                 <CardSkeleton>
@@ -24,7 +24,7 @@ export const FeaturesTertiary = () => {
             </div>
             <div className="border-b border-neutral-200 dark:border-neutral-800">
                 <CardContent>
-                <h2 className="text-lg font-bold text-neutral-800">Role-Based Access</h2>
+                <h2 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Role-Based Access</h2>
                 <CardDescription>Controls who can launch, review, or manage agents based on roles.</CardDescription>
                 </CardContent>
                 <CardSkeleton className="mask-radial-from-20%">
@@ -33,7 +33,7 @@ export const FeaturesTertiary = () => {
             </div>
             <div className="md:border-r border-neutral-200 dark:border-neutral-800">
                 <CardContent>
-                <h2 className="text-lg font-bold text-neutral-800">Approval Queue</h2>
+                <h2 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Approval Queue</h2>
                 <CardDescription>Sends agent-generated content to human reviewers before it's published.</CardDescription>
                 </CardContent>
                 <CardSkeleton className="mask-radial-from-20% mask-r-from-50%">
@@ -42,7 +42,7 @@ export const FeaturesTertiary = () => {
             </div>
             <div className="">
                 <CardContent>
-                <h2 className="text-lg font-bold text-neutral-800">Guardrail Engine</h2>
+                <h2 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Guardrail Engine</h2>
                 <CardDescription>Applies brand, tone, and policy checks before output goes live.</CardDescription>
                 </CardContent>
                 <CardSkeleton className="">
@@ -65,7 +65,7 @@ export const CardContent = ({children}) => {
 
 export const CardDescription = ({children}) => {
     return(
-        <p className="text-neutral-600 mt-2 max-w-md text-balance">
+        <p className="text-neutral-600 dark:text-neutral-400 mt-2 max-w-md text-balance">
             {children}
         </p>
     )

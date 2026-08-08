@@ -84,7 +84,7 @@ const Footer = () => {
             </p>
            <div className="flex items-center justify-center gap-4 *:text-sm *:text-neutral-500">
              <a>Privacy Policy</a>
-             <a>Terms od Service</a>
+             <a>Terms of Service</a>
            </div>
         </Container>
 
@@ -93,7 +93,7 @@ const Footer = () => {
             "absolute -inset-x-[150%] -inset-y-40",
             "[background-size:40px_40px]",
             "[background-image:linear-gradient(to_right,var(--color-neutral-100)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-neutral-100)_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,var(--color-neutral-800)_1px,transparent_1px),linear-gradient(to_bottom,var(color-neutral-800)_1px,transparent_1px)]",
+            "dark:[background-image:linear-gradient(to_right,var(--color-neutral-800)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-neutral-800)_1px,transparent_1px)]",
              "mask-radial-from-50%",
           )}
           style={{
