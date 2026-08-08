@@ -23,7 +23,6 @@ return (
    <FeaturesTertiary/>
    <Speed/>
    <FeaturesSecondary/>
-   
    <Pricing/>
    <Faqs/>
    <Footer/>

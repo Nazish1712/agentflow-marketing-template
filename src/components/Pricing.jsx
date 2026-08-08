@@ -9,7 +9,7 @@ import { IconCircleCheckFilled } from '@tabler/icons-react'
 
 export const Pricing = () => {
   return (
-    <section className="py-10 md:py-20 lg:pt-32 overflow-hidden">
+    <section className="py-10 md:py-20 lg:py-32 overflow-hidden">
         <Container className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="flex flex-col gap-4">
           <SubHeading className="mt-2">
