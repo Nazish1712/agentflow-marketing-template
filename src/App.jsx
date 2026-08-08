@@ -15,7 +15,7 @@ import Footer from './components/Footer'
 function App() {
 
 return (
-    <div className="min-h-screen overflow-x-hidden bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 font-display transition-colors duration-300">
+    <div className="min-h-screen overflow-x-hidden">
    <Navbar/>
    <Hero/>
    <LogoCloud/>
