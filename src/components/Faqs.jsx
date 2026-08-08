@@ -54,7 +54,7 @@ const Question = ({question, answer}) => {
     return(
         <button onClick={()=>(setOpen(!open))} className="w-full rounded-3xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 p-4 md:p-8">
             <div className="flex items-center justify-between ">
-                <h3 className="text-lg md:text-2xl font-bold font-display">{question}</h3>
+                <h3 className="text-lg md:text-2xl font-bold font-display text-left">{question}</h3>
                 <div className="size-6 rounded-full relative  bg-black dark:bg-white flex items-center justify-center">
                     <IconMinus className={cn("size-6 text-white absolute inset-0 transition-all duration-200 text-white dark:text-black",
                     open && "scale-0 rotate-90"
