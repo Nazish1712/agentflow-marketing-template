@@ -27,7 +27,7 @@ const navLinks = [
 
 export const Navbar = () => {
   return (
-        <div className="border-b border-neutral-200 dark:border-neutral-800">
+        <div className="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
             <DesktopNavbar/>
             <MobileNavbar/>
         </div>
