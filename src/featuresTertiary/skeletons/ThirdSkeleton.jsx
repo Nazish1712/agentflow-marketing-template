@@ -6,8 +6,8 @@ import { ArrowIllustrationTop, ArrowIllustrationBottom } from '@/components/illu
 export const SkeletonThree = () => {
   return (
     <div className="flex-1 gap-2 flex flex-col rounded-t-3xl  mx-auto w-full h-full absolute inset-0 pt-2 px-2 perspective=[4000px] max-w-lg z-20">
-    <ArrowIllustrationTop className="absolute left-40 md:left-25 lg:left-40 -top-4 mx-auto z-30"/> 
-    <ArrowIllustrationBottom className="absolute left-32 md:left-20 lg:left-40 -bottom-10 mx-auto blur-[2px]"/>
+    <ArrowIllustrationTop className="absolute left-32 md:left-25 lg:left-40 -top-4 mx-auto z-30"/> 
+    <ArrowIllustrationBottom className="absolute left-28 md:left-20 lg:left-40 -bottom-10 mx-auto blur-[2px]"/>
     <div className={cn(
     "flex items-center justify-center gap-20 h-[200%]",
     "absolute -inset-x-[150%] -inset-y-40",
