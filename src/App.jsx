@@ -20,9 +20,10 @@ return (
    <Hero/>
    <LogoCloud/>
    <Features/>
+   <FeaturesTertiary/>
    <Speed/>
    <FeaturesSecondary/>
-   <FeaturesTertiary/>
+   
    <Pricing/>
    <Faqs/>
    <Footer/>

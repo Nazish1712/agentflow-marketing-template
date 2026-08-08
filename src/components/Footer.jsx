@@ -69,9 +69,9 @@ const Footer = () => {
            </div>
            <div className='flex flex-col gap-4'>
            <h4 className='text-base font-medium text-neutral-400'>Newsletter</h4>
-           <div className='border border-neutral-100 bg-neutral-100 rounded-md flex items-center justify-center'>
-            <input className='bg-transparent outline-none px-4 py-2 placeholder-neutral-400 text-neutral-600 text-sm ' type="email" placeholder="Email"></input>
-            <button className=" px-4 py-2 rounded-sm bg-black">
+           <div className='relative border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 rounded-md flex items-center justify-center'>
+            <input className="bg-transparent outline-none py-2 pl-2 pr-12 placeholder-neutral-400 text-neutral-600 text-sm" type="email" placeholder="Email"></input>
+            <button className=" cursor-pointer px-4 py-2 rounded-[7px] bg-black inset-y-0 right-0 absolute">
                 <IconSend className='text-white size-4'/>
             </button>
            </div>
